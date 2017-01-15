@@ -16,12 +16,12 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
-        app:limitProgress="95"
-        app:resetSpeed="fast"
-        app:text="Drag to unlock"
+        app:limitProgress="90"
+        app:resetSpeed="slow"
+        app:text="HELLO WORLD"
         app:textBold="true"
-        app:textColor="@android:color/white"
-        app:textSize="18sp"
-        app:textGravity="none"
-        app:thumbPadding="10dp" />
+        app:textColor="@android:color/holo_blue_light"
+        app:textSize="20sp"
+        app:textGravity="centerOfThumb"
+        app:thumbPadding="5dp" />
 </RelativeLayout>
