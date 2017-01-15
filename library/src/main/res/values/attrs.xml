@@ -2,13 +2,13 @@
 <resources>
     <declare-styleable name="UnlockSlideView">
 
-        <attr name="reset_speed" format="enum">
+        <attr name="resetSpeed" format="enum">
             <enum name="fast" value="3" />
             <enum name="normal" value="2" />
             <enum name="slow" value="1" />
         </attr>
 
-        <attr name="slide_background" format="reference" />
+        <attr name="slideBackground" format="reference" />
         <attr name="thumb" format="reference" />
         <attr name="thumb_width" format="dimension" />
         <attr name="thumb_height" format="dimension" />
@@ -19,7 +19,7 @@
         <attr name="textSize" format="dimension" />
         <attr name="textColor" format="color"/>
         <attr name="textPadding" format="dimension" />
-        <attr name="text_gravity" format="enum">
+        <attr name="textGravity" format="enum">
             <enum name="centerOfThumb" value="3" />
             <enum name="centerInParent" value="2" />
             <enum name="none" value="1" />

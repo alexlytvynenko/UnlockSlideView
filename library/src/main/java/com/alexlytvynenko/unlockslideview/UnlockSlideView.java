@@ -32,8 +32,8 @@ import static com.alexlytvynenko.unlockslideview.UnlockSlideView.TextGravity.NON
 /**
  * Created by alex_lytvynenko on 05.01.17.
  *
- * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_reset_speed
- * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_background
+ * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_resetSpeed
+ * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_slideBackground
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_thumb
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_thumb_width
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_thumb_height
@@ -43,7 +43,7 @@ import static com.alexlytvynenko.unlockslideview.UnlockSlideView.TextGravity.NON
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_textSize
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_textColor
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_textPadding
- * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_text_gravity
+ * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_textGravity
  * @attr ref com.alexlytvynenko.unlockslideview.R.styleable#UnlockSlideView_limitProgress
  */
 public class UnlockSlideView extends View {
@@ -142,7 +142,7 @@ public class UnlockSlideView extends View {
             final TypedArray a = context.obtainStyledAttributes(attrs,
                     R.styleable.UnlockSlideView, 0, 0);
 
-            Drawable background = a.getDrawable(R.styleable.UnlockSlideView_slide_background);
+            Drawable background = a.getDrawable(R.styleable.UnlockSlideView_slideBackground);
             if (background != null)
                 mBackground = background;
 
@@ -153,7 +153,7 @@ public class UnlockSlideView extends View {
                 mThumbHeight = thumb.getIntrinsicHeight();
             }
 
-            int resetSpeedAttr = a.getInt(R.styleable.UnlockSlideView_reset_speed, 2);
+            int resetSpeedAttr = a.getInt(R.styleable.UnlockSlideView_resetSpeed, 2);
             mResetSpeed = convertAttrValueToResetSpeed(resetSpeedAttr);
 
             mThumbWidth = a.getDimensionPixelSize(R.styleable.UnlockSlideView_thumb_width, mThumbWidth);
@@ -164,7 +164,7 @@ public class UnlockSlideView extends View {
             mThumbHeight = mThumbHeight - mThumbPadding * 2;
             mThumbWidth = mThumbWidth - mThumbPadding * 2;
 
-            int textGravityAttr = a.getInt(R.styleable.UnlockSlideView_text_gravity, 1);
+            int textGravityAttr = a.getInt(R.styleable.UnlockSlideView_textGravity, 1);
             mTextGravity = convertAttrValueToTextGravity(textGravityAttr);
 
             String text = a.getString(R.styleable.UnlockSlideView_text);

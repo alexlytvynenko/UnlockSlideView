@@ -17,11 +17,11 @@
         android:layout_height="50dp"
         android:layout_centerInParent="true"
         app:limitProgress="95"
-        app:reset_speed="fast"
+        app:resetSpeed="fast"
         app:text="Drag to unlock"
         app:textBold="true"
         app:textColor="@android:color/white"
         app:textSize="18sp"
-        app:text_gravity="none"
+        app:textGravity="none"
         app:thumbPadding="10dp" />
 </RelativeLayout>
