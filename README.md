@@ -11,7 +11,7 @@
 
 ```java
 dependencies {
-	compile 'com.alexlytvynenko.unlockslideview:unlockslideview:1.0'
+	compile 'com.alexlytvynenko.unlockslideview:unlockslideview:1.1'
 }
 ```
 
