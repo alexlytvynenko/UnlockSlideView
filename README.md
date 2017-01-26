@@ -63,6 +63,18 @@ dependencies {
     </declare-styleable>
 ```
 
+* Set unlock event listener:
+
+```java
+UnlockSlideView unlockSlideView = (UnlockSlideView) findViewById(R.id.view);
+unlockSlideView.setOnUnlockListener(new UnlockSlideView.OnUnlockListener() {
+            @Override
+            public void onUnlock() {
+                Toast.makeText(MainActivity.this, "Unlocked!", Toast.LENGTH_SHORT).show();
+            }
+        });
+```
+
 ## Sample
 * Clone the repository and check out the `app` module.
 * Download an [example apk](https://raw.githubusercontent.com/alexlytvynenko/UnlockSlideView/master/UnlockSlideView.apk) to check it.
